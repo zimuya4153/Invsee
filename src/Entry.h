@@ -1,15 +1,15 @@
 #pragma once
-#include <ll/api/plugin/NativePlugin.h>
-#include <ll/api/plugin/RegisterHelper.h>
+#include "Config.h"
+#include "Global.h"
 
-namespace my_plugin {
+namespace Invsee {
 
-class MyPlugin {
+class Entry {
 
 public:
-    static std::unique_ptr<MyPlugin>& getInstance();
+    static std::unique_ptr<Entry>& getInstance();
 
-    MyPlugin(ll::plugin::NativePlugin& self) : mSelf(self) {}
+    Entry(ll::plugin::NativePlugin& self) : mSelf(self) {}
 
     [[nodiscard]] ll::plugin::NativePlugin& getSelf() const { return mSelf; }
 
@@ -24,10 +24,20 @@ public:
 
     // TODO: Implement this method if you need to unload the plugin.
     // /// @return True if the plugin is unloaded successfully.
-    // bool unload();
+    bool unload();
+
+    Config& getConfig();
+
+    bool loadConfig();
+
+    bool saveConfig();
+
+    GMLIB::Files::I18n::LangI18n& getI18n();
 
 private:
     ll::plugin::NativePlugin& mSelf;
+    std::optional<GMLIB::Files::I18n::LangI18n>   mI18n;
+    std::optional<Config>     mConfig;
 };
 
-} // namespace my_plugin
+} // namespace Invsee

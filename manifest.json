@@ -2,9 +2,9 @@
     "name": "${pluginName}",
     "entry": "${pluginFile}",
     "type": "native",
-    "author": "author",
-    "description": "description",
-    "version": "0.0.0",
+    "author": "小小的子沐呀 QQ:1756150362",
+    "description": "箱子查包插件",
+    "version": "1.0.0",
     "dependencies": [
         {
             "name": "GMLIB"
