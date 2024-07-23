@@ -19,6 +19,9 @@ target("Invsee")
         "NOMINMAX",
         "UNICODE"
     )
+    add_headerfiles(
+		"src/**.h"
+    )
     add_files(
         "src/**.cpp"
     )

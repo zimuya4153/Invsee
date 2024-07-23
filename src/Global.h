@@ -7,4 +7,5 @@ extern ll::Logger logger;
 
 extern void registerCommands();
 
-extern std::string tr(std::string const& key, std::vector<std::string> const& params = {});
+extern std::string
+tr(std::string const& key, std::string const& language = "zh_CN", std::vector<std::string> const& params = {});

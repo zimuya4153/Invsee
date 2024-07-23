@@ -49,6 +49,6 @@ GMLIB::Files::I18n::LangI18n& Entry::getI18n() { return mI18n.value(); }
 
 LL_REGISTER_PLUGIN(Invsee::Entry, Invsee::Entry::getInstance());
 
-std::string tr(std::string const& key, std::string const& language, std::vector<std::string> const& params = {}) {
+std::string tr(std::string const& key, std::string const& language, std::vector<std::string> const& params) {
     return Invsee::Entry::getInstance()->getI18n().get(key, language, params);
 }
