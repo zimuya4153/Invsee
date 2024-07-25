@@ -1,0 +1,22 @@
+{
+    "entry": "Invsee.js",
+    "name": "Invsee",
+    "type": "lse-quickjs",
+    "author": "小小的子沐呀 QQ:1756150362",
+    "description": "箱子查包",
+    "version": "1.0.0",
+    "extraInfo": {
+        "url": "https://www.minebbs.com/resources/bossbarnotice-boss.8235/"
+    },
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        },
+        {
+            "name": "GMLIB"
+        },
+        {
+            "name": "GMLIB-LegacyRemoteCallApi"
+        }
+    ]
+}

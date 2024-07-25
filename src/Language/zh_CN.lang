@@ -1,0 +1,37 @@
+commands.invsee.description=§6查§b包
+commands.invsee.setup.error=命令安装失败
+commands.invsee.error.no_player=非玩家不可执行
+commands.invsee.search.error=搜索玩家 %s 失败
+
+plugin.invsee.error.config.loading.error=配置文件加载失败:%s
+
+plugin.invsee.info.config.loading.write.default=配置文件加载失败
+
+plugin.invsee.chest.enderchest.title=§b%s §6的末影箱§r
+plugin.invsee.chest.uiitem.title=§b%s §6UI栏§c(请谨慎编辑)§r
+plugin.invsee.chest.inventory.title=§b%s §6背包§r
+plugin.invsee.chest.toast.title=§6[Invsee]§c提示
+plugin.invsee.chest.toast.action.error=§e暂未实现 §6%s §e功能。
+plugin.invsee.chest.toast.open.uiitem=§6温馨提示:编辑玩家UI栏需谨慎，不然会造成 §e%s §6格子拿不下来的情况
+
+form.main.title=查询玩家背包
+form.main.content=请选择查询模式
+form.main.checkOnline=查询在线玩家
+form.main.checkAll=查询全部玩家
+form.main.searchPlayer=搜索玩家
+form.checkList.title=玩家列表
+form.checkList.content=请选择你要查询的玩家
+form.checkList.back=返回上一页
+form.checkList.button=%s
+form.checkPlayer.title=查询玩家背包
+form.checkPlayer.content=你正在查询玩家 %s 的背包\n请选择操作模式
+form.checkPlayer.back=返回上一页
+form.checkPlayer.inventory=背包
+form.checkPlayer.endchest=末影箱
+form.checkPlayer.uiitem=UI栏
+form.searchPlayer.title=搜索玩家
+form.searchPlayer.description=请输入玩家名进行搜索
+form.searchPlayer.name.input=玩家名:
+form.searchPlayer.name.placeholder=请输入玩家名
+form.searchPlayer.mode.input=正则表达式搜索模式:
+form.searchPlayer.mode.placeholder=留空就留空吧awa
